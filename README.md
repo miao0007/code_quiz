@@ -9,4 +9,4 @@ After click start button, the quiz is started and the timer start counting down
 After all six question be completed, a high score board displayed.
 ![image](assets/images/high_score.png)
 High score board can store and display scores from high to low, you can empty them by click clear button.
-The further aim is to build more various questions like text area, multi option questions, and create back button that can let user redo the previous questions.
+The further aim is to build more various questions like text area, multi option questions, and create back button that can let user redo the previous questions. 
