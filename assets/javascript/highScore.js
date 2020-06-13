@@ -7,6 +7,7 @@ var high_scores = JSON.parse(localStorage.getItem("high_scores")) || [];
 //  store and display high score
 function displayHighScore() {
     high_scores = sortScores(high_scores, 'score');
+
 // create high score display list
     for (var i = 0; i < high_scores.length; i++) {
       console.log(high_scores[i].score);
@@ -27,8 +28,7 @@ function sortScores(array, key) {
   });
 }
 
-// //button named clear high score defined
-// //function to clear high scores or 'localStorage' items
+// create clear button can empty score board
 clearScore.addEventListener("click", function() {
     localStorage.removeItem("high_scores");
     window.location.reload();
