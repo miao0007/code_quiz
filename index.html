@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Quiz</title>
+    <!-- import google font for page text -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <!-- import bootstrap stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- link to local css stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <span class="high-score"
+        ><a class="navbar-brand" href="./assets/highScore.html"
+          >HighScore</a
+        ></span
+      >
+      <h5 class="time-counter">Time:<span id="time-counter-down"> </span>s</h5>
+    </nav>
+
+    <!-- Create a container to display the quiz questions and options -->
+    <div id="quizContainer" class="container">
+      <div id="start-container">
+
+        <!-- Quiz rule statement -->
+        <div class="title">Javascript Quiz</div>
+
+        <p class="quiz-requirement">
+          You will have 90 seconds to answer 6 questions
+        </p>
+        <p class="quiz-requirement">
+          You will have 90 seconds to answer 6 questions
+        </p>
+        <p class="quiz-requirement">
+          10 seconds will be deducted once you choose a wrong answer
+        </p>
+        <p class="quiz-requirement">Press Start button to start quiz.</p>
+
+        <!-- Create a start button to start this quiz -->
+        <button id="start-quiz">Start</button>
+      </div>
+
+      <div id="quiz-container" class="startHidden">
+        <div class="title">Javascript Quiz</div>
+        <div id="question" class="question"></div>
+        
+        <!-- Use button to display options which are easily click -->
+        <button
+          id="opt1"
+          type="button"
+          name="option"
+          value="1"
+          class="options btn btn-block"
+        ></button>
+        <button
+          id="opt2"
+          type="button"
+          name="option"
+          value="2"
+          class="options btn btn-block"
+        ></button>
+        <button
+          id="opt3"
+          type="button"
+          name="option"
+          value="3"
+          class="options btn btn-block"
+        ></button>
+        <button
+          id="opt4"
+          type="button"
+          name="option"
+          value="4"
+          class="options btn btn-block"
+        ></button>
+        <!-- Display result for each question answered -->
+        <div id="result" class="result" ;></div>
+      </div>
+
+      <!-- This page coming out if time running out -->
+      <div id="finish-container" class="startHidden">
+        <h4>Times up!</h4>
+        <a href="index.html" class="button px-2 py-1">Restart Quiz</a>
+      </div>
+
+      <!-- This page displays when all questions be completed. -->
+      <div id="result-page" class="startHidden">
+        <h3 id="message"></h3>
+        <h4 id="yourScore"></h4>
+        <h5>Enter initials:</h5>
+        <form>
+          <input type="text" id="userName" placeholder="eg. HM" />
+          <!--button to submit-->
+          <a
+            href="./assets/highScore.html"
+            id="submitScore"
+            class="button px-2 py-1"
+            >Submit</a
+          >
+        </form>
+      </div>
+    </div>
+
+    <!-- import javascript files -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/javascript/question.js"></script>
+    <script src="./assets/javascript/quiz-script.js"></script>
+    <script src="./assets/javascript/highScore.js"></script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+body {
+  font-family: "IBM Plex Serif", serif;
+  background: #6cf;
+}
+/* define high score style in nav bar */
+.high-score {
+  font-weight: bold;
+  color: #08038c;
+  border: 1px solid #08038c;
+  padding-left: 5px;
+  border-radius: 10px;
+}
+.high-score:hover {
+  background: #08038c;
+  color: #f6f6f6;
+}
+
+/* define timer displayed oon nav bar */
+.time-counter {
+  font-weight: bold;
+  color: #08038c;
+  border: 1px solid #08038c;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/* main container style  */
+.container {
+  height: 400px;
+  width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  border: 1px solid #08038c;
+  box-shadow: 0 0 8px 3px #ffffff;
+}
+/* page title style */
+.title {
+  padding-top: 20px;
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #08038c;
+}
+
+/* start page content style */
+.quiz-requirement {
+  font-size: 18px;
+  margin-left: 20%;
+}
+/* set start button style */
+#start-quiz {
+  display: block;
+  margin: 5% auto;
+  background-color: #08038c;
+  color: #f6f6f6;
+  width: 200px;
+  border-radius: 15px;
+}
+#start-quiz:hover {
+  background-color: #6cf;
+  color: #08038c;
+}
+
+/* set quiz questions style */
+.question {
+  padding: 20px;
+  font-size: 20px;
+  background: #08038c;
+  border-radius: 20px;
+  margin: 10px 0 10px 0;
+  color: #f6f6f6;
+}
+/* quiz option list of questions */
+.options {
+  width: 90%;
+  display: inline-block;
+  padding: 5px 0 5px 15px;
+  vertical-align: middle;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 5px 0 5px 10px;
+  color: #000000;
+  border-radius: 20px;
+}
+
+.options:hover {
+  background: #08038c;
+  color: #f6f6f6;
+}
+/* display final result */
+.result {
+  margin-top: 1em;
+  height: 100px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* score display page */
+#result-page {
+  text-align: center;
+}
+
+/* submit button style */
+#submitScore {
+  display: block;
+  margin: 5% auto;
+  background-color: #08038c;
+  color: #f6f6f6;
+  width: 100px;
+  border-radius: 15px;
+}
+/* Back to first page button */
+#goBackBtn {
+  text-align: center;
+  background-color: #6cf;
+  color: #000000;
+  width: 100px;
+  border-radius: 15px;
+  width: 100px;
+  display: inline-block;
+  border: 1px solid #08038c;
+  text-decoration: none;
+}
+#goBackBtn:hover {
+  background-color: #08038c;
+  color: #f6f6f6;
+}
+/* Clear score button */
+#clear {
+  background-color: #6cf;
+  color: #000000;
+  width: 200px;
+  display: block;
+  margin-left: 10px;
+  border-radius: 15px;
+}
+#clear:hover {
+  background-color: #08038c;
+  color: #f6f6f6;
+}
+.startHidden {
+  display: none;
+}
