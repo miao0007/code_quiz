@@ -1,7 +1,8 @@
 # code_quiz
 A online quiz application idea
-Project Overview
-The URL of deployed application/site is https://miao0007.github.io/code_quiz/
+## Project Overview
+### The deployed application/site 
+https://miao0007.github.io/code_quiz/
 The aim is to simulate a online quiz application, which looks like this:
 ![image](assets/images/first_page.png)
 After click start button, the quiz is started and the timer start counting down
